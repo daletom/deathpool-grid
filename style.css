@@ -73,3 +73,55 @@ nav div {
 .visible-title {
     visibility: visible;
 }
+
+.grid {
+    display: grid;
+    grid-gap: 1.5vw;
+    min-height: 100vh;
+    padding: 1.5vw;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
+    grid-template-areas:
+      "hero   hero"
+      "hero   hero"
+      "med1   med1"
+      "med2   med2"
+      "med 3 med3"
+      "small1 small2";
+  }
+
+  @media screen and (min-width: 750px) {
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 25vh);
+      grid-template-areas:
+      "small1 hero hero"
+      "small2 hero hero"
+      "med1 med2 med3"
+      "med1 med2 med3";
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    .grid {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+      "small1 hero hero"
+      "small2 hero hero"
+      "med1 med2 med3"
+      "med1 med2 med3";
+    }
+  }
+
+  .grid .item:nth-child(1)  { grid-area: hero; }
+  .grid .item:nth-child(2)  { grid-area: small1; }
+  .grid .item:nth-child(3)  { grid-area: small2; }
+  .grid .item:nth-child(4)  { grid-area: med1; }
+  .grid .item:nth-child(5)  { grid-area: med2; }
+  .grid .item:nth-child(6)  { grid-area: med3; }
+  
+
