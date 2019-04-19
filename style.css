@@ -89,8 +89,11 @@ nav div {
       "hero   hero"
       "med1   med1"
       "med2   med2"
-      "med 3 med3"
-      "small1 small2";
+      "med3   med3"
+      "med4   med4"
+      "med5   med5"
+      "med6   med6"
+      "small1 small1";
   }
 
   @media screen and (min-width: 750px) {
@@ -98,10 +101,10 @@ nav div {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 25vh);
       grid-template-areas:
-      "small1 hero hero"
-      "small2 hero hero"
-      "med1 med2 med3"
-      "med1 med2 med3";
+      "med2 hero hero med1 med5"
+      "med2 hero hero med1 med5"
+      "med1 hero hero med3 med6"
+      "med1 med4 med4 med3 med6";
     }
   }
 
@@ -110,18 +113,20 @@ nav div {
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
-      "small1 hero hero"
-      "small2 hero hero"
-      "med1 med2 med3"
-      "med1 med2 med3";
+      "med2 hero hero hero med1 med5"
+      "med2 hero hero hero med1 med5"
+      "med1 hero hero hero med3 med6"
+      "med1 med4 med4 small1 med3 med6";
     }
   }
 
   .grid .item:nth-child(1)  { grid-area: hero; }
   .grid .item:nth-child(2)  { grid-area: small1; }
-  .grid .item:nth-child(3)  { grid-area: small2; }
-  .grid .item:nth-child(4)  { grid-area: med1; }
-  .grid .item:nth-child(5)  { grid-area: med2; }
-  .grid .item:nth-child(6)  { grid-area: med3; }
+  .grid .item:nth-child(3)  { grid-area: med1; }
+  .grid .item:nth-child(4)  { grid-area: med2; }
+  .grid .item:nth-child(5)  { grid-area: med3; }
+  .grid .item:nth-child(6)  { grid-area: med4; }
+  .grid .item:nth-child(7)  { grid-area: med5; }
+  .grid .item:nth-child(8)  { grid-area: med6; }
   
 
