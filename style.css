@@ -80,12 +80,11 @@ nav div {
     min-height: 100vh;
     padding: 1.5vw;
   }
-  
-  @media screen and (max-width: 749px) {
-   .grid {
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
-     grid-template-areas:
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
+    grid-template-areas:
       "hero   hero"
       "hero   hero"
       "med1   med1"
@@ -96,7 +95,6 @@ nav div {
       "med6   med6"
       "small1 small1";
   }
-}
 
   @media screen and (min-width: 750px) {
     .grid {
@@ -110,7 +108,8 @@ nav div {
     }
   }
 
-   .grid {
+  @media screen and (min-width: 1400px) {
+    .grid {
       grid-template-columns: repeat(6, 1fr);
       grid-template-rows: auto;
       grid-template-areas:
@@ -119,7 +118,7 @@ nav div {
       "med1 hero hero hero med3 med6"
       "med1 med4 med4 small1 med3 med6";
     }
-
+  }
 
   .grid .item:nth-child(1)  { grid-area: hero; }
   .grid .item:nth-child(2)  { grid-area: small1; }
