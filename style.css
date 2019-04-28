@@ -1,25 +1,5 @@
-/*
-
-header {
-    height: 500px;
-    z-index: 10;
-}
-
-header h1 {
-    background-color: rgba(18,72,120, 0.8);
-    color: #fff;
-    padding: 0 1rem;
-    position: absolute;
-    top: 2rem; 
-    left: 2rem;
-}
-
-*/
-
 <style>
-* {
-  box-sizing: border-box; 
-}
+
 body {
   display: flex;
   min-height: 100vh;
