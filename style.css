@@ -41,7 +41,7 @@ body {
 #main > nav {
   order: -1;
 }
-header, footer {
+footer {
   height: 20vh;
 }
 header, footer, article, nav, aside {
