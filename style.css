@@ -34,9 +34,13 @@ body {
   flex: 1;
 }
 #main > nav, 
+#main > aside,
+#main > article {
+  flex: 0 0 33vw;
+}
+#main > nav,
 #main > aside {
-  flex: 0 0 20vw;
-  background: beige;
+  background: beige
 }
 #main > nav {
   order: -1;
