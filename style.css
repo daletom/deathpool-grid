@@ -1,4 +1,4 @@
-.topnav {
+/*.topnav {
     background-color: #333;
     overflow: hidden;
 }
@@ -19,10 +19,6 @@
     color: white;
 }
 
-/* resets */
-body { margin:0px; padding:0px; }
-
-/* main */
 header {
     height: 500px;
     z-index: 10;
@@ -73,58 +69,38 @@ nav div {
 .visible-title {
     visibility: visible;
 }
-
-.grid {
-    display: grid;
-    grid-gap: 1.5vw;
-    min-height: 100vh;
-    padding: 1.5vw;
-  }
-/*
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
-    grid-template-areas:
-      "hero   hero"
-      "hero   hero"
-      "med1   med1"
-      "med2   med2"
-      "med3   med3"
-      "med4   med4"
-      "med5   med5"
-      "med6   med6"
-      "small1 small1";
-  }
-
-  @media screen and (min-width: 750px) {
-    .grid {
-      grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(5, 25vh);
-      grid-template-areas:
-      "med2 hero hero med1 med5"
-      "med2 hero hero med1 med5"
-      "med1 hero hero med3 med6"
-      "med1 med4 med4 med3 med6";
-    }
-  }
 */
-    .grid {
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: auto;
-      grid-template-areas:
-      "med2 hero hero hero med1 med5"
-      "med2 hero hero hero med1 med5"
-      "med1 hero hero hero med3 med6"
-      "med1 med4 med4 small1 med3 med6";
-    }
 
-  .grid .item:nth-child(1)  { grid-area: hero; }
-  .grid .item:nth-child(2)  { grid-area: small1; }
-  .grid .item:nth-child(3)  { grid-area: med1; }
-  .grid .item:nth-child(4)  { grid-area: med2; }
-  .grid .item:nth-child(5)  { grid-area: med3; }
-  .grid .item:nth-child(6)  { grid-area: med4; }
-  .grid .item:nth-child(7)  { grid-area: med5; }
-  .grid .item:nth-child(8)  { grid-area: med6; }
+<style>
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > article {
+  flex: 1;
+}
+#main > nav, 
+#main > aside {
+  flex: 0 0 20vw;
+  background: beige;
+}
+#main > nav {
+  order: -1;
+}
+header, footer {
+  height: 20vh;
+}
+header, footer, article, nav, aside {
+  padding: 1em;
+}
   
 
