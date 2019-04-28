@@ -45,11 +45,15 @@ body {
 #main > nav {
   order: -1;
 }
-footer {
-  height: 20vh;
-}
 footer, article, nav, aside {
   padding: 1em;
+}
+.footer-banner {
+  background-image: url('https://assets.imgix.net/~text?w=1800&h=400&bg=c1c1c1&fm=png&txtalign=center,middle&txtclr=848484&txtfont=Futura-CondensedMedium&txttrack=2&txt=Spoilers%20Below&txtsize=150&auto=format,compress');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 .header-banner {
     background-color: #333;
