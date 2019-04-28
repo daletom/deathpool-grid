@@ -24,7 +24,7 @@ body {
 #main > nav {
   order: -1;
 }
-@media (max-width: 1240px) {
+@media (min-width: 1240px) {
   nav {
     width: 100%;
   }
