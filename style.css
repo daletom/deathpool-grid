@@ -51,6 +51,9 @@ padding-bottom: 20;
   li img {
     width: 200px;
   }
+  nav img {
+    width: 800px;
+  }
 
 }
 footer, article, nav, aside {
