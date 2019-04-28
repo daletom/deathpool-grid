@@ -54,6 +54,7 @@ footer, article, nav, aside {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  height: 400px;
 }
 .header-banner {
     background-color: #333;
