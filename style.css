@@ -83,8 +83,9 @@ footer, article, nav, aside {
 ul{
 list-style-type:none;
 }
+
 li{
-    font-family: Georgia,"Times New Roman",serif;
-    font-size: 1em;
-    padding-bottom: 20;
+font-family: Georgia,"Times New Roman",serif;
+font-size: 1em;
+padding-bottom: 20;
 }
