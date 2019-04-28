@@ -40,6 +40,12 @@ body {
   #main {
     display: inline;
   }
+  li {
+    font-size: 2.5em;
+  }
+  li img {
+    width: 200px;
+  }
 
 }
 footer, article, nav, aside {
